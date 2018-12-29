@@ -8,6 +8,7 @@ from PyQt5.QtGui import *
 class AuthWindow(QMainWindow):
     def __init__(self, parent=None):
         super(AuthWindow, self).__init__(parent)
+        self.setWindowFlags(Qt.WindowStaysOnTopHint)
         self.setWindowIcon(QIcon(":/ico/icon.ico"))
         ti = TrayIcon(self)
         ti.show()
@@ -22,7 +23,6 @@ class AuthWindow(QMainWindow):
 
     def changeEvent(self, event):
         if self.isMinimized():
-            self.showNormal()
             self.hide()
 
 class TrayIcon(QSystemTrayIcon):
@@ -48,14 +48,14 @@ class TrayIcon(QSystemTrayIcon):
             if pw.isVisible():
                 pw.hide()
             else:
-                pw.show()
+                pw.showNormal()
 
     def actionClicked(self):
         pw = self.parent()
         if pw.isVisible():
             pw.hide()
         else:
-            pw.show()
+            pw.showNormal()
 
     def quit(self):
         self.parent().close()

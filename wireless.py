@@ -35,7 +35,7 @@ def login(userinfo):
         return 1
     elif r.content==b'IP has been online, please logout.':
         return 2
-    elif r.content==b'E2553: Password is error.':
+    elif r.content==b'E2553: Password is error.' or r.content==b'E2531: User not found.':
         return 3
     else:
         print(r.content)
