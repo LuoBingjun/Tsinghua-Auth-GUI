@@ -1,6 +1,6 @@
 import sys, threading, configparser
 import MainWindow
-import wireless, lan
+import wireless
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *

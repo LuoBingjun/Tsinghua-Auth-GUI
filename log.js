@@ -2,8 +2,6 @@
 
 const Hashes = require("./hashes.min.js");
 
-
-
 function xEncode(str,key)
 {
         if (str == "") {

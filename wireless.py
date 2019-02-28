@@ -91,7 +91,7 @@ def get_userinfo():
 
 def networktest():
     #0为未连接上网,1为在内网(未登录),2为在内网(已登录),3为在外网
-    backinfo = run('ping -n 1 -w 1 net.tsinghua.edu.cn',shell=True)
+    backinfo = run('ping -4 -n 1 -w 1 www.tsinghua.edu.cn',shell=True)
     if backinfo.returncode:
         return 0, 0
     else:
