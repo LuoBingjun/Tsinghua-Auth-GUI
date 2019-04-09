@@ -1,33 +1,40 @@
-# Tsinghua_Auth_GUI
+# Tsinghua Auth GUI
 
 清华大学校园网第三方客户端
 
+Version 1.0.0
+
 ## Highlights
 
-- 自动检测校园网环境
+- 基于PyQt5，原生跨平台
+- 整合net、auth4、auth6三种认证方式
 - 最小化到托盘
 - 断线重连（勾选后即可自动保持在线状态）
 
-## 支持
+## 支持网络
 
 - 可通过[net.tsinghua.edu.cn](http://net.tsinghua.edu.cn/)认证的校园网（Tsinghua、Tsinghua-5G无线网和部分有线网）
-- （快了）可通过[auth*.tsinghua.edu.cn](http://auth.tsinghua.edu.cn/)认证的校园网（Tsinghua-IPv4、Tsinghua-IPv6无线网和部分有线网）
+- 可通过[auth*.tsinghua.edu.cn](http://auth.tsinghua.edu.cn/)认证的校园网（Tsinghua-IPv4、Tsinghua-IPv6无线网和部分有线网）
+
+## 不支持网络
+
+- Tsinghua-Secure无线网
 
 ## 环境
 
 Python版本>=3.6
 
-在Windows 10 Edu 64-bit、Windows 7 Pro 32-bit上测试通过
+测试环境：
+
+- Windows 10 64-bit
+- Ubuntu 18.04 Desktop 64-bit
+- Raspbian Stretch with desktop
 
 ## 库
 
 PyQt5
 
-requests
-
-retrying
-
 ## 感谢
 
-感谢[Tunet-Auth项目](https://github.com/CyrilKZ/Tunet-Auth)的认证代码
+感谢[tunet-python](https://github.com/yuantailing/tunet-python)提供的认证库
 
