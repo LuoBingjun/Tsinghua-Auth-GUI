@@ -70,7 +70,11 @@ def login():
 
 def logout():
     ui.checkBox_2.setChecked(False)
-    result = net.logout(config['info'])
+    ret = net.logout(config['info'])
+    if ret == 1:
+        ui.statusBar.showMessage('状态：断开成功')
+    else:
+        ui.statusBar.showMessage('错误：' + ret)
 
 
 def attempt_to_login():
