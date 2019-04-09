@@ -70,7 +70,7 @@ def login():
 
 def logout():
     ui.checkBox_2.setChecked(False)
-    result = net.logout()
+    result = net.logout(config['info'])
 
 
 def attempt_to_login():

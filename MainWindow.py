@@ -13,7 +13,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(330, 200)
         MainWindow.setMinimumSize(QtCore.QSize(330, 200))
-        MainWindow.setMaximumSize(QtCore.QSize(340, 200))
+        MainWindow.setMaximumSize(QtCore.QSize(330, 200))
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         MainWindow.setFont(font)

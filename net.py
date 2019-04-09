@@ -39,12 +39,20 @@ def checklogin(info):
 def logout(info):
     # 1为成功，其他为错误信息
     if info['auth'] == 0:
-        ret=tunet.net.checklogin()
+        ret=tunet.net.logout()
         if ret['msg'] == 'Logout is successful.':
             return 1
         else:
             return ret['msg']
     elif info['auth'] == 1:
-        ret=tunet.auth4.checklogin()
+        ret=tunet.auth4.logout()
+        if ret['ecode']==0:
+            return 1
+        else:
+            return ret['error']
     elif info['auth'] == 2:
-        ret=tunet.auth6.checklogin()
+        ret=tunet.auth6.logout()
+        if ret['ecode']==0:
+            return 1
+        else:
+            return ret['error']

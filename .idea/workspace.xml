@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9806194-bf77-4ee9-9012-a9c778eab982" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/net.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hashes.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lan.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal.main.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/settings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireless.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/net.py" beforeDir="false" afterPath="$PROJECT_DIR$/net.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="63" column="40" lean-forward="true" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="376">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -46,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-440">
+            <state relative-caret-position="22">
               <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
             </state>
           </provider>
@@ -56,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/net.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="594">
-              <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -88,16 +80,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1974" />
-    <option name="y" value="-24" />
-    <option name="width" value="1918" />
-    <option name="height" value="1038" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,7 +107,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +197,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-15" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19863014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -290,26 +282,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wireless.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lan.py" />
+    <entry file="file://$PROJECT_DIR$/wireless.py" />
     <entry file="file://$PROJECT_DIR$/settings.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -324,6 +298,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tunet/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -331,27 +319,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="63" column="40" lean-forward="true" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="376">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
