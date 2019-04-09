@@ -1,0 +1,11 @@
+{
+    "general": {
+        "automode": "False",
+        "save": "False"
+    },
+    "info": {
+        "auth": 1,
+        "password": "",
+        "username": ""
+    }
+}
