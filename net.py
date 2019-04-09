@@ -9,13 +9,13 @@ def login(info):
         else:
             return ret['msg']
     elif info['auth'] == 1:
-        ret = tunet.auth4.login(info['username'], info['password'])
+        ret = tunet.auth4.login(info['username'], info['password'], net=True)
         if ret['ecode']==0:
             return 1
         else:
             return ret['error']
     elif info['auth'] == 2:
-        ret = tunet.auth6.login(info['username'], info['password'])
+        ret = tunet.auth6.login(info['username'], info['password'], net=True)
         if ret['ecode'] == 0:
             return 1
         else:
@@ -35,3 +35,16 @@ def checklogin(info):
         return 1
     else:
         return 0
+
+def logout(info):
+    # 1为成功，其他为错误信息
+    if info['auth'] == 0:
+        ret=tunet.net.checklogin()
+        if ret['msg'] == 'Logout is successful.':
+            return 1
+        else:
+            return ret['msg']
+    elif info['auth'] == 1:
+        ret=tunet.auth4.checklogin()
+    elif info['auth'] == 2:
+        ret=tunet.auth6.checklogin()

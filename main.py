@@ -74,11 +74,11 @@ def logout():
 
 
 def attempt_to_login():
-    if config['general']['automode']=='True':
-        if net.checklogin(config['info']):
-            ui.statusBar.showMessage('状态：在线')
-        else:
-            ui.statusBar.showMessage('状态：离线')
+    if net.checklogin(config['info']):
+        ui.statusBar.showMessage('状态：在线')
+    else:
+        ui.statusBar.showMessage('状态：离线')
+        if config['general']['automode']=='True':
             login()
 
     global timer

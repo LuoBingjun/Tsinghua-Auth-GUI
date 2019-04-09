@@ -1,11 +1,11 @@
 {
     "general": {
         "automode": "False",
-        "save": "False"
+        "save": "True"
     },
     "info": {
         "auth": 1,
-        "password": "",
-        "username": ""
+        "password": "BING?!19991123",
+        "username": "lbj17"
     }
 }
