@@ -1,6 +1,8 @@
 import sys, os, threading, json, signal
 import net
 
+online=False
+
 def save_config():
   with open("config.json", "w") as f:
     json.dump(config, f, sort_keys=True, indent=4, separators=(',', ': '))
@@ -26,7 +28,8 @@ def login():
         print('错误：' + ret)
 
 def attempt_to_login():
-    if net.checklogin(config['info']):
+    if net.checklogin(config['info'] and online==False):
+      online=True
       print('状态：在线')
     else:
       print('状态：离线')
