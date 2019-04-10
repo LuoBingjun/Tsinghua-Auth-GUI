@@ -52,6 +52,19 @@ def _auth_login(ipv, username, password, net=False):
         },
         None,
     )
+    if res['ecode'] != 0:
+        res = lib.getJSON(
+            'https://auth{:d}.tsinghua.edu.cn/cgi-bin/srun_portal'.format(ipv),
+            {
+                'action': 'login',
+                'username': username,
+                'password': password,
+                'ac_id': '33',
+                'ip': '',
+                'double_stack': '1',
+            },
+            None,
+        )
     return res
 
 
@@ -75,8 +88,8 @@ def _auth_logout(ipv):
 
 def _auth_checklogin(ipv):
     req = request.Request(
-            'https://auth{:d}.tsinghua.edu.cn/ac_detect.php?ac_id=1'
-            .format(ipv)
+        'https://auth{:d}.tsinghua.edu.cn/ac_detect.php?ac_id=1'
+        .format(ipv)
     )
     res = request.urlopen(req, timeout=5)
     assert 200 == res.getcode()
@@ -92,16 +105,16 @@ def _auth_checklogin(ipv):
 
 def _net_login(username, password):
     res = lib.get(
-            'https://net.tsinghua.edu.cn/do_login.php',
-            {
-                'action': 'login',
-                'username': username,
-                'password': '{MD5_HEX}' + hashlib.md5(
-                            password.encode('latin1')).hexdigest(),
-                'ac_id': '1',
-            },
-            None,
-            'raw'
+        'https://net.tsinghua.edu.cn/do_login.php',
+        {
+            'action': 'login',
+            'username': username,
+            'password': '{MD5_HEX}' + hashlib.md5(
+                password.encode('latin1')).hexdigest(),
+            'ac_id': '1',
+        },
+        None,
+        'raw'
     )
     return {
         'msg': res,

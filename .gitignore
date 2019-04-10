@@ -1,12 +1,8 @@
 config.json
-.idea/*
+.idea/
 
 # VSCode
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
 # Python
 # Byte-compiled / optimized / DLL files

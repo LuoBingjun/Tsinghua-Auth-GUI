@@ -1,15 +1,13 @@
 # Tsinghua Auth GUI
 
-清华大学校园网第三方客户端
-
-Version 1.0.0
+清华大学校园网第三方客户端 V1.0
 
 ## Highlights
 
-- 基于PyQt5，原生跨平台
+- 基于PyQt5，原生跨平台（Windows、Linux、MacOS）
 - 整合net、auth4、auth6三种认证方式
 - 最小化到托盘
-- 断线重连（勾选后即可自动保持在线状态）
+- 自动断线重连（勾选后即可自动保持在线状态）
 
 ## 支持网络
 
@@ -32,7 +30,27 @@ Python版本>=3.6
 
 ## 库
 
-PyQt5
+### six
+
+使用pip安装：
+
+```cmd
+python3 -m pip install six
+```
+
+### PyQt5
+
+在WIndows系统下可使用pip安装：
+
+```cmd
+python3 -m pip install PyQt5
+```
+
+在类Debian（含Ubuntu、Raspbian）系统下可使用apt-get安装：
+
+```sh
+$ sudo apt install python3-pyqt5
+```
 
 ## 感谢
 
