@@ -15,7 +15,7 @@ def first_config():
   config['info']['username']=input('请输入用户名：\n')
   config['info']['password']=input('请输入密码：\n')
   save_config()
-  print('设置成功，开始自动认证')
+  print('设置成功')
 
 def login():
     print('状态：正在登录中')
@@ -26,9 +26,12 @@ def login():
         print('错误：' + ret)
 
 def attempt_to_login():
-    if net.checklogin(config['info'])==0:
-        if config['general']['automode']=='True':
-            login()
+    if net.checklogin(config['info']):
+      print('状态：在线')
+    else:
+      print('状态：离线')
+      if config['general']['automode']=='True':
+        login()
 
     global timer
     timer = threading.Timer(10, attempt_to_login)
@@ -52,7 +55,8 @@ if __name__ == '__main__':
             }
     }
     first_config()
-
+  
+  print('开始自动认证')
   timer = threading.Timer(10, attempt_to_login)
   timer.start()
         
