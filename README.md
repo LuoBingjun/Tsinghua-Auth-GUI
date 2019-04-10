@@ -30,6 +30,14 @@ Python版本>=3.6
 
 ## 库
 
+### six
+
+使用pip安装：
+
+```cmd
+python3 -m pip install six
+```
+
 ### PyQt5
 
 在WIndows系统下可使用pip安装：
