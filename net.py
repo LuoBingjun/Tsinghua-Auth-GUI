@@ -39,8 +39,8 @@ def checklogin(info):
             return 1
         else:
             return 0
-    except:
-        return 0
+    except Exception as e:
+         return str(e)
 
 def logout(info):
     # 1为成功，其他为错误信息
