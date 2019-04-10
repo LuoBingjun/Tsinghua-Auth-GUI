@@ -28,9 +28,11 @@ def login():
         print('错误：' + ret)
 
 def attempt_to_login():
-    if net.checklogin(config['info'] and online==False):
-      online=True
-      print('状态：在线')
+    global online
+    if net.checklogin(config['info']):
+      if online==False:
+          online=True
+          print('状态：在线')
     else:
       print('状态：离线')
       if config['general']['automode']=='True':
@@ -58,8 +60,7 @@ if __name__ == '__main__':
             }
     }
     first_config()
-  
+
   print('开始自动认证')
   timer = threading.Timer(10, attempt_to_login)
   timer.start()
-        
