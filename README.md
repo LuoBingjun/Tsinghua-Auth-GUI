@@ -11,7 +11,10 @@
 - 整合net、auth4、auth6三种认证方式
 - 自动断线重连（勾选后即可自动保持在线状态）
 
-## 支持网络
+## 下载
+[下载地址](https://github.com/LuoBingjun/Tsinghua-Auth-GUI/releases)
+
+## 功能
 
 除Tsinghua-Secure以外的所有清华大学校园网认证，包括：
 
