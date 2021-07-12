@@ -44,7 +44,7 @@ def attempt_to_login():
             print('状态：在线')
     elif ret == 0:
         print('状态：离线')
-        if config['general']['automode'] == 'True':
+        if config['general']['automode'] == True:
             login()
     else:
         print('错误：' + ret)
