@@ -19,7 +19,7 @@ class AuthWindow(QMainWindow):
 
     def closeEvent(self, event):
         timer.cancel()
-        if config['general']['save'] == 'False':
+        if config['general']['save'] == False:
             config['info']['username'] = ''
             config['info']['password'] = ''
         save_settings()
@@ -90,7 +90,7 @@ def attempt_to_login():
         ui.statusBar.showMessage('状态：在线')
     elif ret == 0:
         ui.statusBar.showMessage('状态：离线')
-        if config['general']['automode'] == 'True':
+        if config['general']['automode'] == True:
             login()
     else:
         ui.statusBar.showMessage('错误：' + ret)
@@ -140,8 +140,8 @@ if __name__ == '__main__':
     ui.comboBox.setCurrentIndex(config['info']['auth'])
     ui.lineEdit.setText(config['info']['username'])
     ui.lineEdit_2.setText(config['info']['password'])
-    ui.checkBox.setChecked(config['general']['save'] == 'True')
-    ui.checkBox_2.setChecked(config['general']['automode'] == 'True')
+    ui.checkBox.setChecked(config['general']['save'] == True)
+    ui.checkBox_2.setChecked(config['general']['automode'] == True)
 
     ui.comboBox.currentIndexChanged.connect(sync_settings)
     ui.lineEdit.textChanged.connect(sync_settings)
